@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let mainVC = Bundle.main.loadNibNamed(String(describing: MainViewController.self), owner: nil, options: nil)?.first as? MainViewController {
             window = UIWindow(frame: UIScreen.main.bounds)
-            window?.backgroundColor = .lightGray
+            window?.backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
             
             window?.rootViewController = mainVC
             window?.makeKeyAndVisible()
