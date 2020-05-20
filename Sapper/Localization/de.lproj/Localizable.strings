@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Sapper
+
+  Created by Yuri Ivashin on 20.05.2020.
+  Copyright © 2020 The Homber Team. All rights reserved.
+*/
+
+/* Alert.Title */
+"congratulationsAlert.Title" = "Herzlichen Glückwunsch";
+
+/* Alert.Message */
+"congratulaltionsAlert.Message" = "Sie haben das Spiel gewonnen!";
+
+/* Alert.Ok.Action.Title */
+"okAction.Title" = "Ok";
+
+/* Label.Text */
+"usingFlagHintLabel.Text" = "Um die Fahne ein- oder auszuschalten, benutzen Sie einfach die lange Berührung. Länger als 1 Sekunde.";
+
+/* Label.Text */
+"numberOfRowsLabel.Text" = "Zeilen";
+
+/* Label.Text */
+"numberOfColumnsLabel.Text" = "Kolumnen";
+
+/* Label.Text */
+"numberOfMinesLabel.Text" = "Anzahl der Minen";
+
+/* Button.Title */
+"startNewGameButton.Title" = "Neues Spiel beginnen";
+
+/* GameSettings.Title */
+"Easy.Text" = "Einfach";
+"Medium.Text" = "Mittlere";
+"Hard.Text" = "Schwierig";
+"Custom.Text" = "Benutzerdefiniert";

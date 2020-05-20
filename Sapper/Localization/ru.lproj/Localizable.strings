@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Sapper
+
+  Created by Yuri Ivashin on 20.05.2020.
+  Copyright © 2020 The Homber Team. All rights reserved.
+*/
+
+/* Alert.Title */
+"congratulationsAlert.Title" = "Поздравляем";
+
+/* Alert.Message */
+"congratulaltionsAlert.Message" = "Вы выиграли игру!";
+
+/* Alert.Ok.Action.Title */
+"okAction.Title" = "Ок";
+
+/* Label.Text */
+"usingFlagHintLabel.Text" = "Чтобы установить/снять флаг, просто используйте долгое нажатие. Дольше 1 секунды.";
+
+/* Label.Text */
+"numberOfRowsLabel.Text" = "Строк";
+
+/* Label.Text */
+"numberOfColumnsLabel.Text" = "Колонок";
+
+/* Label.Text */
+"numberOfMinesLabel.Text" = "Количество мин";
+
+/* Button.Title */
+"startNewGameButton.Title" = "Начать новую игру";
+
+/* GameSettings.Title */
+"Easy.Text" = "Легко";
+"Medium.Text" = "Средне";
+"Hard.Text" = "Сложно";
+"Custom.Text" = "Настроить";

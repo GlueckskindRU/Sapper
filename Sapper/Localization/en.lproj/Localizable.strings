@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  Sapper
+
+  Created by Yuri Ivashin on 20.05.2020.
+  Copyright © 2020 The Homber Team. All rights reserved.
+*/
+
+/* Alert.Title */
+"congratulationsAlert.Title" = "Congratulations";
+
+/* Alert.Message */
+"congratulaltionsAlert.Message" = "You have won the game!";
+
+/* Alert.Ok.Action.Title */
+"okAction.Title" = "Ok";
+
+/* Label.Text */
+"usingFlagHintLabel.Text" = "To set on/off the flag, just use the long touch. Longer than 1 second.";
+
+/* Label.Text */
+"numberOfRowsLabel.Text" = "Rows";
+
+/* Label.Text */
+"numberOfColumnsLabel.Text" = "Columns";
+
+/* Label.Text */
+"numberOfMinesLabel.Text" = "Number of mines";
+
+/* Button.Title */
+"startNewGameButton.Title" = "Start new game";
+
+/* GameSettings.Title */
+"Easy.Text" = "Easy";
+"Medium.Text" = "Medium";
+"Hard.Text" = "Hard";
+"Custom.Text" = "Custom";
+
