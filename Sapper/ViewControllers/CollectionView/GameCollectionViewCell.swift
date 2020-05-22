@@ -62,9 +62,17 @@ class GameCollectionViewCell: UICollectionViewCell {
     
     @objc
     private func longTapGestureRecognize(_ recognizer: UILongPressGestureRecognizer) {
-        if recognizer.state == .ended,
-            let cell = cell {
+        guard let cell = cell else {
+            return
+        }
+        
+        switch recognizer.state {
+        case .began:
+            delegate?.cellLongTapStartProcessing(cell)
+        case .ended:
             delegate?.cellLongTapProcessing(cell)
+        default:
+            return
         }
     }
 }

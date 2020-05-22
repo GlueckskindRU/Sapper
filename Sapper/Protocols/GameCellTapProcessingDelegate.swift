@@ -11,4 +11,5 @@ import Foundation
 protocol GameCellTapProcessingDelegate: class {
     func cellTapProcessing(_ cell: GameCell)
     func cellLongTapProcessing(_ cell: GameCell)
+    func cellLongTapStartProcessing(_ cell: GameCell)
 }
