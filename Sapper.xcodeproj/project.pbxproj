@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA085718247C033300CFA242 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA085717247C033300CFA242 /* GameKit.framework */; };
+		DA08571A247C07F400CFA242 /* GameCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA085719247C07F400CFA242 /* GameCenterController.swift */; };
 		DA1E76F32457186B00D275A5 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E76F22457186B00D275A5 /* GameState.swift */; };
 		DA4C662B245041E7000823D8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C662A245041E7000823D8 /* GameViewController.swift */; };
 		DA4C662E2450424C000823D8 /* GameFieldCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C662D2450424C000823D8 /* GameFieldCollectionViewDataSource.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA085717247C033300CFA242 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		DA085719247C07F400CFA242 /* GameCenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterController.swift; sourceTree = "<group>"; };
 		DA1E76F22457186B00D275A5 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		DA4C662A245041E7000823D8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DA4C662D2450424C000823D8 /* GameFieldCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldCollectionViewDataSource.swift; sourceTree = "<group>"; };
@@ -69,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA085718247C033300CFA242 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA085716247C033300CFA242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA085717247C033300CFA242 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA4C662C2450422E000823D8 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 			children = (
 				DA59067A243F4D8200065D03 /* Sapper */,
 				DA590679243F4D8200065D03 /* Products */,
+				DA085716247C033300CFA242 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +186,7 @@
 			children = (
 				DA590696243F650C00065D03 /* GameField.swift */,
 				DAA6DEBF246C713B000C722B /* SettingsController.swift */,
+				DA085719247C07F400CFA242 /* GameCenterController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -277,6 +292,7 @@
 				DA1E76F32457186B00D275A5 /* GameState.swift in Sources */,
 				DA4C663024504B79000823D8 /* GameCollectionViewCell.swift in Sources */,
 				DA590697243F650C00065D03 /* GameField.swift in Sources */,
+				DA08571A247C07F400CFA242 /* GameCenterController.swift in Sources */,
 				DA590693243F4E3C00065D03 /* CellsState.swift in Sources */,
 				DA858406244B27AE0095B56C /* UIView.swift in Sources */,
 				DAA6DEBE246C70C4000C722B /* GameSettings.swift in Sources */,
@@ -438,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = Sapper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -459,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = Sapper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

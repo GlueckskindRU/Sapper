@@ -64,6 +64,8 @@ class MainViewController: UIViewController {
         setupGameSettingsSegmentedControl()
         setupSteppers()
         reloadValuesOfLabelsAndSteppers()
+        
+        GameCenterController.shared.viewContoller = self
     }
 }
 

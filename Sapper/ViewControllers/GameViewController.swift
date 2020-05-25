@@ -57,6 +57,12 @@ class GameViewController: UIViewController {
         minesLeftLabel.text = "\(gameFieldEngine.getNumberOfRestOfMines())"
         additionalInfoLabel.text = "\(gameFieldEngine.getNumberOfClosedCells())"
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        GameCenterController.shared.viewContoller = self
+    }
 }
 
 // MARK: - Extension for a GameFieldCollectionView
