@@ -137,15 +137,11 @@ extension GameViewController: GameCellTapProcessingDelegate {
         refreshView()
     }
     
-    func cellLongTapStartProcessing(_ cell: GameCell) {
+    func cellLongTapStartProcessing() {
         guard gameFieldEngine.checkGameState() == .playing else {
             return
         }
         
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {
-            (timer) in
-            
-            UIDevice.vibrate()
-        })
+        UIDevice.vibrate()
     }
 }

@@ -16,7 +16,7 @@
 "okAction.Title" = "Ок";
 
 /* Label.Text */
-"usingFlagHintLabel.Text" = "Чтобы установить/снять флаг, просто используйте долгое нажатие. Дольше 1 секунды.";
+"usingFlagHintLabel.Text" = "Чтобы установить/снять флаг, просто используйте долгое нажатие.";
 
 /* Label.Text */
 "numberOfRowsLabel.Text" = "Строк";

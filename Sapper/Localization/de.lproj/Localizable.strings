@@ -16,7 +16,7 @@
 "okAction.Title" = "Ok";
 
 /* Label.Text */
-"usingFlagHintLabel.Text" = "Um die Fahne ein- oder auszuschalten, benutzen Sie einfach die lange Berührung. Länger als 1 Sekunde.";
+"usingFlagHintLabel.Text" = "Um die Fahne ein- oder auszuschalten, benutzen Sie einfach die lange Berührung.";
 
 /* Label.Text */
 "numberOfRowsLabel.Text" = "Zeilen";

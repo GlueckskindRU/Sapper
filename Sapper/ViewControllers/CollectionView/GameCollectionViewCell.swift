@@ -24,7 +24,7 @@ class GameCollectionViewCell: UICollectionViewCell {
         imageView.addGestureRecognizer(tapGestureRecognizer)
         
         let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longTapGestureRecognize(_:)))
-        longTapGestureRecognizer.minimumPressDuration = 1
+        longTapGestureRecognizer.minimumPressDuration = 0.25
         longTapGestureRecognizer.numberOfTouchesRequired = 1
         imageView.addGestureRecognizer(longTapGestureRecognizer)
         
@@ -68,7 +68,7 @@ class GameCollectionViewCell: UICollectionViewCell {
         
         switch recognizer.state {
         case .began:
-            delegate?.cellLongTapStartProcessing(cell)
+            delegate?.cellLongTapStartProcessing()
         case .ended:
             delegate?.cellLongTapProcessing(cell)
         default:

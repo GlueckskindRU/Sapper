@@ -16,7 +16,7 @@
 "okAction.Title" = "Ok";
 
 /* Label.Text */
-"usingFlagHintLabel.Text" = "To set on/off the flag, just use the long touch. Longer than 1 second.";
+"usingFlagHintLabel.Text" = "To set on/off the flag, just use the long touch.";
 
 /* Label.Text */
 "numberOfRowsLabel.Text" = "Rows";
