@@ -46,8 +46,10 @@ class GameCell {
         switch state {
         case .exploded:
             image = UIImage(named: "mine")
+            backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
         case .flagged:
             image = UIImage(named: "flag")
+            backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
         case .opened:
             if let number = numberOfMinesInNeigborhood {
                 switch number {
