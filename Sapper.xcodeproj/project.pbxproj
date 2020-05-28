@@ -30,6 +30,7 @@
 		DAA8B671244F129400C7F8E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8B670244F129400C7F8E7 /* MainViewController.swift */; };
 		DAAAA31924754D2600FB2966 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAAAA31724754D2600FB2966 /* Localizable.strings */; };
 		DAB305FA246EA1400080A6E2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB305F9246EA1400080A6E2 /* MainViewController.xib */; };
+		DAD1E7FD247FD13600959F99 /* ColorNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1E7FC247FD13600959F99 /* ColorNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		DAAAA31C24754D6900FB2966 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DAAAA31D24754D6900FB2966 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localization/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAB305F9246EA1400080A6E2 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		DAD1E7FC247FD13600959F99 /* ColorNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA6DEC2246C71B3000C722B /* AuxiliaryStringKeys.swift */,
+				DAD1E7FC247FD13600959F99 /* ColorNames.swift */,
 			);
 			path = Consts;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA6DEC0246C713B000C722B /* SettingsController.swift in Sources */,
+				DAD1E7FD247FD13600959F99 /* ColorNames.swift in Sources */,
 				DA4C663524505BE0000823D8 /* GameFieldCollectionViewLayout.swift in Sources */,
 				DA85840C244B27FF0095B56C /* UIDevice.swift in Sources */,
 				DA59067C243F4D8200065D03 /* AppDelegate.swift in Sources */,
@@ -438,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = Sapper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -459,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = Sapper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

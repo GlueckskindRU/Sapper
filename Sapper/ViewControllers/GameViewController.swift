@@ -74,7 +74,7 @@ extension GameViewController {
         
         gameFieldCollectionViewDataSource = GameFieldCollectionViewDataSource(gameFieldEngine.transformMatrixIntoArray(), cellProcessingDelegate: self)
         gameFieldCollectionView?.dataSource = gameFieldCollectionViewDataSource
-        gameFieldCollectionView?.backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
+        gameFieldCollectionView?.backgroundColor = ColorNames.lightGray.getColor()
         gameFieldCollectionView?.register(cellType: GameCollectionViewCell.self, nib: false)
     }
     

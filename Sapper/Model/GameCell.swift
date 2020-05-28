@@ -15,7 +15,7 @@ class GameCell {
     private(set) var state: CellsState
     private(set) var image: UIImage?
     private(set) var numberOfMinesInNeigborhood: Int?
-    private(set) var backgroundColor: UIColor? = UIColor(named: "darkGrayInLightAppearanceColor")
+    private(set) var backgroundColor: UIColor? =  ColorNames.darkGray.getColor()
     
     init(row: Int, column: Int, isMined: Bool) {
         self.row = row
@@ -46,25 +46,27 @@ class GameCell {
         switch state {
         case .exploded:
             image = UIImage(named: "mine")
-            backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
+            backgroundColor = ColorNames.lightGray.getColor()
         case .flagged:
             image = UIImage(named: "flag")
-            backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
+            backgroundColor = ColorNames.lightGray.getColor()
         case .opened:
             if let number = numberOfMinesInNeigborhood {
                 switch number {
                 case 1...9:
                     image = UIImage(named: "\(number)")
+                    backgroundColor = ColorNames.darkGray.getColor()
                 default:
                     image = nil
-                    backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
+                    backgroundColor = ColorNames.lightGray.getColor()
                 }
             } else {
                 image = nil
-                backgroundColor = UIColor(named: "lightGrayInLightAppearanceColor")
+                backgroundColor = ColorNames.lightGray.getColor()
             }
         case .closed:
             image = nil
+            backgroundColor = ColorNames.darkGray.getColor()
         }
     }
     
