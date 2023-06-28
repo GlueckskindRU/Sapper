@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol GameCellTapProcessingDelegate: class {
+protocol GameCellTapProcessingDelegate: AnyObject {
     func cellTapProcessing(_ cell: GameCell)
     func cellLongTapProcessing(_ cell: GameCell)
     func cellLongTapStartProcessing()
