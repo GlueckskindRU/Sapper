@@ -16,17 +16,6 @@ class GameCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        imageView.isUserInteractionEnabled = true
-        
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapGestureRecognize(_:)))
-        tapGestureRecognizer.numberOfTouchesRequired = 1
-        imageView.addGestureRecognizer(tapGestureRecognizer)
-        
-        let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longTapGestureRecognize(_:)))
-        longTapGestureRecognizer.minimumPressDuration = 0.25
-        longTapGestureRecognizer.numberOfTouchesRequired = 1
-        imageView.addGestureRecognizer(longTapGestureRecognizer)
         
         return imageView
     }()
@@ -36,7 +25,17 @@ class GameCollectionViewCell: UICollectionViewCell {
         self.delegate = delegate
         
         imageView.image = cell.image
+        imageView.contentMode = .scaleAspectFit
         contentView.backgroundColor = cell.backgroundColor
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureRecognize(_:)))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        addGestureRecognizer(tapGestureRecognizer)
+        
+        let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longTapGestureRecognize(_:)))
+        longTapGestureRecognizer.minimumPressDuration = 0.25
+        longTapGestureRecognizer.numberOfTouchesRequired = 1
+        addGestureRecognizer(longTapGestureRecognizer)
     }
     
     override func layoutSubviews() {
@@ -50,6 +49,8 @@ class GameCollectionViewCell: UICollectionViewCell {
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         ])
+        
+        imageView.frame.size = contentView.frame.size
     }
     
     @objc
