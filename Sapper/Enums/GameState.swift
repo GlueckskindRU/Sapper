@@ -8,8 +8,12 @@
 
 import Foundation
 
+/// Состояние игры
 enum GameState {
+    /// В процессе игры
     case playing
+    /// Игра завершена выигрышем
     case won
+    /// Игра завершена проигрышем
     case lost
 }

@@ -8,10 +8,15 @@
 
 import Foundation
 
+/// Настройки сложности игры
 enum GameSettings: Int, CaseIterable {
+    /// Лёгкий уровень сложности
     case easy = 0
+    /// Средний уровень сложности
     case medium = 1
+    /// Тяжёлый уровень сложности
     case hard = 2
+    /// Настраиваемый уровень сложности
     case custom = 3
     
     static var gameSettingsTitles: [String] = [
